@@ -1,0 +1,50 @@
+# Jekyll configuration for lab documentation
+title: "Microarchitectural Attacks Lab"
+description: "Cache-Based Side-Channel Vulnerabilities"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+# Collections
+collections:
+  exercises:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Include/Exclude
+include:
+  - script.js
+  - code/
+  - images/
+
+exclude:
+  - build_and_test.sh
+  - LAB_OVERVIEW.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Site settings
+show_solutions: False
+exercise_4_1: False
