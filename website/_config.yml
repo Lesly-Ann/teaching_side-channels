@@ -1,7 +1,7 @@
 # Jekyll configuration for lab documentation
 title: "Microarchitectural Attacks Lab"
 description: "Cache-Based Side-Channel Vulnerabilities"
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/teaching_side-channels" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Build settings
@@ -27,18 +27,12 @@ defaults:
 
 # Include/Exclude
 include:
-  - script.js
-  - code/
-  - images/
+  - code.zip
 
 exclude:
-  - build_and_test.sh
-  - LAB_OVERVIEW.md
-  - README.md
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - vendor
+  - jekyll.sh
 
 # Plugins
 plugins:
