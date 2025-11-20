@@ -119,3 +119,12 @@ if __name__ == "__main__":
     print(f"\nCreating zip file: {zip_filename}")
     shutil.make_archive(base_name=str(zip_filename).replace('.zip', ''), format='zip', root_dir=output_dir)
     print(f"Zip file created: {zip_filename}")
+
+    # Move code.zip to ../website
+    website_dir = script_dir.parent / "website"
+    if website_dir.exists():
+        dest_zip = website_dir / "code.zip"
+        shutil.move(str(zip_filename), str(dest_zip))
+        print(f"\nMoved code.zip to: {dest_zip}")
+    else:
+        print(f"\nWarning: Website directory not found: {website_dir}")
