@@ -1,2 +1,8 @@
 exercises/stripped/
 website/_site
+
+# Exclude binaries
+exercises/0_exploit_memcmp
+exercises/1_exploit_vote
+exercises/2_exploit_pin
+exercises/3_exploit_simple_spectre

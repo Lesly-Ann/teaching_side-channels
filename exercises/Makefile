@@ -4,9 +4,9 @@ LDFLAGS = -Wl,-T,layout.ld
 CORE = 4 # CPU core to bind the programs to
 
 # Always rebuild programs
-.PHONY: all clean 3_exploit_simple_spectre 2_exploit_pin exploit_spectre 1_exploit_bin 0_exploit_memcmp
+.PHONY: all clean 3_exploit_simple_spectre 2_exploit_pin exploit_spectre 1_exploit_vote 0_exploit_memcmp
 
-all: 3_exploit_simple_spectre 2_exploit_pin exploit_spectre 1_exploit_bin 0_exploit_memcmp
+all: 3_exploit_simple_spectre 2_exploit_pin exploit_spectre 1_exploit_vote 0_exploit_memcmp
 
 #3_exploit_spectre: 3_exploit_spectre.c 3_victim_spectre.c
 #	$(CC) $(CFLAGS) -o 3_exploit_spectre 3_exploit_spectre.c 3_victim_spectre.c $(LDFLAGS)
