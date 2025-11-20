@@ -1,7 +1,6 @@
 ---
 layout: default
-title: "Session 7: Caches and Microarchitectural Timing Attacks"
-nav_order: 7
+title: "Lab Microarchitectural Timing Attacks"
 nav_exclude: false
 search_exclude: false
 has_children: false
